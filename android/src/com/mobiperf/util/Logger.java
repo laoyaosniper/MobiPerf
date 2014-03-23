@@ -1,6 +1,8 @@
 // Copyright 2011 Google Inc. All Rights Reserved.
 
-package com.mobiperf;
+package com.mobiperf.util;
+
+import com.mobiperf.MobiperfConfig;
 
 import android.util.Log;
 
@@ -9,7 +11,7 @@ import android.util.Log;
  */
 public class Logger {
   private final static boolean LOGGING_ENABLED = true;
-  private final static String TAG = "Mobiperf";
+  private final static String TAG = MobiperfConfig.CLIENT_KEY;
   
   public static void d(String msg) {
     if (LOGGING_ENABLED) {

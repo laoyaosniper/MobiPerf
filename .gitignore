@@ -11,7 +11,8 @@ android/.settings/
 tcpserver/bin/
 tcpserver/mlab/
 tcpserver/*.jar
-
+udpburstserver/bin/
+udpburstserver/.settings/
 # These are produced by templates
 server/app.yaml
 server/gspeedomenter/config_private.py

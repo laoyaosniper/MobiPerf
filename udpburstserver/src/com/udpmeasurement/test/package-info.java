@@ -1,4 +1,4 @@
-/* Copyright 2012 Google Inc.
+/* Copyright 2013 RobustNet Lab, University of Michigan. All Rights Reserved.
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
@@ -12,16 +12,8 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
-package com.mobiperf;
-
 /**
- * Error raised when a measurement fails.
+ * @author Hongyi Yao (hyyao@umich.edu)
+ * package for test case
  */
-public class MeasurementError extends Exception {
-  public MeasurementError(String reason) {
-    super(reason);
-  }
-  public MeasurementError(String reason, Throwable e) {
-    super(reason, e);
-  }
-}
+package com.udpmeasurement.test;

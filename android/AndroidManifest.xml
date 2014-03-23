@@ -1,17 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
   package="com.mobiperf"
-  android:versionName="v2.4.2" android:versionCode="1042">
-  <uses-permission android:name="android.permission.INTERNET" />
-  <uses-permission android:name="android.permission.GET_ACCOUNTS" />
-  <uses-permission android:name="android.permission.USE_CREDENTIALS" />
-  <uses-permission android:name="android.permission.READ_PHONE_STATE" />
-  <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+  android:versionName="3.0.0" android:versionCode="1030">
   <uses-permission android:name="android.permission.ACCESS_COARSE_UPDATES" />
-  <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
-  <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
-  <uses-permission android:name="android.permission.BATTERY_STATS" />
-  <uses-permission android:name="android.permission.WAKE_LOCK" />
   <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED"/>
   <uses-sdk android:targetSdkVersion="9" android:minSdkVersion="9" />
 
@@ -41,11 +32,6 @@
       </intent-filter>
     </activity>
     <activity 
-      android:name=".SystemConsoleActivity"
-      android:launchMode="singleTask" 
-      android:theme="@android:style/Theme.Light.NoTitleBar">      
-    </activity>
-    <activity 
       android:name=".ResultsConsoleActivity"
       android:launchMode="singleTask"
       android:theme="@android:style/Theme.Light.NoTitleBar">
@@ -66,7 +52,7 @@
       android:theme="@android:style/Theme.Light.NoTitleBar">
     </activity>
     <service 
-      android:name=".MeasurementScheduler" 
+      android:name=".Console" 
       android:exported="false">
     </service>
     <receiver android:name=".WatchdogBootReceiver">
