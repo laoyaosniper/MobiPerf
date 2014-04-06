@@ -112,7 +112,7 @@ public class SpeedometerPreferenceActivity extends PreferenceActivity {
           if ( profile != null ) {
             Logger.i("Current data usage profile " + profile);
             Toast.makeText(SpeedometerPreferenceActivity.this
-              , "Current Data limitation: " + dataLimitName[profile.ordinal()] + " per month"
+              , "Current Data limit: " + dataLimitName[profile.ordinal()] + " per month"
               , Toast.LENGTH_SHORT).show();
             dataLimitPref.setValue(profile.toString());
           }
@@ -230,7 +230,7 @@ public class SpeedometerPreferenceActivity extends PreferenceActivity {
     });
 
     /**
-     * Setting data limitation
+     * Setting data limit
      */
     dataLimitPref.setEntries(dataLimitName);
     dataLimitPref.setEntryValues(dataLimitProfile);

@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
   package="com.mobiperf"
-  android:versionName="3.0.0" android:versionCode="1030">
+  android:versionName="3.0.0" android:versionCode="1100">
   <uses-permission android:name="android.permission.ACCESS_COARSE_UPDATES" />
   <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED"/>
   <uses-sdk android:targetSdkVersion="9" android:minSdkVersion="9" />

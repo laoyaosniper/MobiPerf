@@ -76,13 +76,14 @@ public final class Console extends Service{
     };
     this.registerReceiver(broadcastReceiver, filter);
     addIconToStatusBar();
+    // Put scheduler service into foreground. Makes the process less likely of being killed
+    startForeground(NOTIFICATION_ID, createServiceRunningNotification());
   }
   
   @Override
   public int onStartCommand(Intent intent, int flags, int startId) {
     // refresh status and stat bar
     updateStatus(null);
-    
     return START_STICKY;
   }
   
